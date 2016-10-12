@@ -21,10 +21,14 @@ Firebase.  If you have not already done so, a new project can be created in the
 The Firebase authentication strategy authenticates users using a Firebase Token.
 
 You must call  
+
+
      firebase.initializeApp({
          serviceAccount: "path/to/serviceAccountCredentials.json",
          databaseURL: "https://databaseName.firebaseio.com"
      });
+
+     
  before using this strategy.
    
 
@@ -44,7 +48,7 @@ You must call
 
 #### Authenticate Requests
 
-Use `passport.authenticate()`, specifying the `'google'` strategy, to
+Use `passport.authenticate()`, specifying the `'firebaseauth'` strategy, to
 authenticate requests.
 
 For example, as route middleware in an [Express](http://expressjs.com/)
