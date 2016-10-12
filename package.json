@@ -1,8 +1,8 @@
 {
   "name": "passport-firebase-auth",
-  "version": "0.0.0",
+  "version": "0.0.0-beta.1",
   "description": "Firebase Strategy",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,16 @@
   "bugs": {
     "url": "https://github.com/bambusoideae/passport-firebase-auth/issues"
   },
-  "homepage": "https://github.com/bambusoideae/passport-firebase-auth#readme"
+  "homepage": "https://github.com/bambusoideae/passport-firebase-auth#readme",
+  "dependencies": {
+    "firebase": "^3.4.1",
+    "passport-strategy": "1.x.x",
+    "uid2": "0.0.x"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-passport-strategy": "^1.0.0",
+    "make-node": "^0.3.5",
+    "mocha": "^3.1.2"
+  }
 }
